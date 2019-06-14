@@ -1,0 +1,53 @@
+version: '2'
+services:
+    web:
+        build:
+            context: ./
+            dockerfile: web.docker
+        volumes:
+            - ./:/var/www
+        ports:
+            - "3095:80"
+        links:
+            - app
+    app:
+        build:
+            context: ./
+            dockerfile: app.docker
+        volumes:
+            - ./:/var/www
+        links:
+            - database
+        environment:
+            XDEBUG_CONFIG: "remote_host=host.docker.internal remote_enable=1"
+            DB_PORT: "3306"
+            DB_HOST: "database"
+
+    composer:
+        restart: 'no'
+        image: composer/composer:php7
+        command: install
+        volumes:
+        - .:/app
+
+    myadmin:
+        image: phpmyadmin/phpmyadmin
+        container_name: phpmyadmin_test_mobimill
+        ports:
+            - "8585:80"
+        environment:
+            - PMA_ARBITRARY=1
+            - PMA_HOST=database
+        restart: always
+        depends_on:
+            - database
+    database:
+        image: mysql:5.7
+        environment:
+            - "MYSQL_ROOT_PASSWORD=root"
+            - "MYSQL_DATABASE=root"
+        ports:
+            - "33095:3306"
+        volumes:
+            - "./data/db/mysql:/var/lib/mysql"          
+        command: mysqld --sql-mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION'

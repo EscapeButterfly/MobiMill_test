@@ -1,0 +1,304 @@
+2019/06/13 19:50:17 [error] 6#6: *67 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/HybridsController.php on line 16. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/HybridsController.php on line 16. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Application.php(392" while reading upstream, client: 172.24.0.1, server: , request: "GET /hybrids HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095"
+2019/06/14 14:25:14 [error] 6#6: *59 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/HybridsController.php on line 55. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownPropertyException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownPropertyException))
+#4 {main}
+Previous exception:
+yii\base\UnknownPropertyException: Getting unknown property: app\models\CornHybrids::hybrids in /var/www/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/db/BaseActiveRecord.php(298): yii\base\Component->__get('hybrids')
+#1 /var/www/controllers/HybridsController.php(56): yii\db\BaseActiveR" while reading upstream, client: 172.24.0.1, server: , request: "GET /hybrids?faoRange=480,490 HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095"
+2019/06/14 14:25:34 [error] 6#6: *59 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/HybridsController.php on line 55. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/HybridsController.php on line 55. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Application.php(392" while reading upstream, client: 172.24.0.1, server: , request: "GET /hybrids?faoRange=480,490 HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095"
+2019/06/14 14:52:27 [error] 6#6: *86 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 20. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 20. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 14:52:46 [error] 6#6: *86 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 20. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 20. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 14:57:00 [error] 6#6: *124 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 19. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 19. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 14:57:33 [error] 6#6: *124 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 25. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 25. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "GET /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095"
+2019/06/14 14:57:39 [error] 6#6: *124 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 25. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 25. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "GET /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095"
+2019/06/14 14:57:40 [error] 6#6: *124 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 25. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 25. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "GET /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095"
+2019/06/14 19:17:16 [error] 6#6: *170 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 20. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySe" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:17:16 [error] 6#6: *170 FastCGI sent in stderr: "ntException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 20. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:17:38 [error] 6#6: *170 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 20. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySe" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:17:38 [error] 6#6: *170 FastCGI sent in stderr: "ntException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 20. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:17:46 [error] 6#6: *170 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 20. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySe" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:17:46 [error] 6#6: *170 FastCGI sent in stderr: "ntException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 20. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:21:12 [error] 6#6: *176 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 19. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 19. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:21:31 [error] 6#6: *176 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 19. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 19. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:21:58 [error] 6#6: *176 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 18. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 18. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:23:17 [error] 6#6: *194 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 21. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySe" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:23:17 [error] 6#6: *194 FastCGI sent in stderr: "ntException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 21. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:23:43 [error] 6#6: *194 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 41. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 41. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:25:07 [error] 6#6: *202 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 47. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 47. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:25:59 [error] 6#6: *202 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 47. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 47. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:31:16 [error] 6#6: *208 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 19. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 19. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:32:11 [error] 6#6: *217 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 18. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 18. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:37:03 [error] 6#6: *223 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 19. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 19. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendo" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:37:03 [error] 6#6: *223 FastCGI sent in stderr: "r/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
+2019/06/14 19:37:12 [error] 6#6: *223 FastCGI sent in stderr: "PHP message: An Error occurred while handling another error:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 19. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/web/ErrorHandler.php(135): yii\web\Response->send()
+#2 /var/www/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\web\HeadersAlreadySentException))
+#3 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\web\HeadersAlreadySentException))
+#4 {main}
+Previous exception:
+yii\web\HeadersAlreadySentException: Headers already sent in /var/www/controllers/IntersectionController.php on line 19. in /var/www/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /var/www/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /var/www/vendor/yiisoft/yii2/base/Applicati" while reading upstream, client: 172.24.0.1, server: , request: "POST /hybrids/intersect HTTP/1.1", upstream: "fastcgi://172.24.0.5:9000", host: "localhost:3095", referrer: "http://localhost:3095/hybrids/intersect"
