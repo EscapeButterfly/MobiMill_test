@@ -5,7 +5,6 @@ test task
 Install docker, then cd into project dir.
 ```
 docker-compose up --build -d
-docker-compose exec app bash
 ```
 
 ## API
